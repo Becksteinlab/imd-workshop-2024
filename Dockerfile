@@ -10,24 +10,23 @@ ARG NB_UID=1000
 ENV HOME /home/${NB_USER}
 RUN useradd --shell /bin/bash -u ${NB_UID} -G lucky -o -c "" -m conda
 
-
-COPY . ${HOME}
+COPY . .
 RUN chown -R ${NB_UID} ${HOME}
-# RUN chmod +x ${HOME}/entrypoint
 
-# # Ensure correct ownership of the home directory
-# RUN chown -R ${NB_UID}:${NB_UID} ${HOME}
+# Modify the entrypoint script
+COPY entrypoint /opt/docker/bin/entrypoint
+RUN chmod +x /opt/docker/bin/entrypoint
 
-# USER ${NB_USER}
-# COPY . ${HOME}
-
-
-# USER root
-# RUN chown -R ${NB_UID} ${HOME}
-
-# Install JupyterLab as root
+# RUN source /opt/conda/etc/profile.d/conda.sh && \
+#     conda create -n workshop python notebook jupyterlab jupyterhub imdclient MDAnalysis
 RUN source /opt/conda/etc/profile.d/conda.sh && \
-    conda activate env && \
-    python3 -m pip install --no-cache-dir notebook jupyterlab jupyterhub
+        conda env create -n workshop --file=env.yaml
+
+# # Install JupyterLab as root
+# RUN source /opt/conda/etc/profile.d/conda.sh && \
+#     conda activate env && \
+#     python3 -m pip install --no-cache-dir notebook jupyterlab jupyterhub imdclient MDAnalysis
+
+
 
 CMD [ "/bin/bash" ]
