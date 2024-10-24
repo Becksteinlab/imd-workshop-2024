@@ -17,7 +17,7 @@ RUN useradd --shell /bin/bash -u ${NB_UID} -G lucky -o -c "" -m conda
 COPY . ${HOME}
 USER root
 RUN chown -R ${NB_UID} ${HOME}
-RUN chmod +x /home/conda/entrypoint
+RUN chmod +x ${HOME}/entrypoint
 
 # # Ensure correct ownership of the home directory
 # RUN chown -R ${NB_UID}:${NB_UID} ${HOME}
