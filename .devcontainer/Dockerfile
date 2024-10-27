@@ -7,6 +7,7 @@ RUN chmod +x /opt/docker/bin/workshop_entrypoint
 RUN source /opt/conda/etc/profile.d/conda.sh && \
         conda env create -n workshop --file=env.yaml
 
-ENTRYPOINT [ "/opt/conda/bin/tini", "--", "/opt/docker/bin/workshop_entrypoint" ]
 
-CMD [ "/bin/bash" ]
+# Codespaces does not use these!
+# ENTRYPOINT [ "/opt/conda/bin/tini", "--", "/opt/docker/bin/workshop_entrypoint" ]
+# CMD [ "/bin/bash" ]

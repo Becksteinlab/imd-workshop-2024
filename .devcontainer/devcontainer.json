@@ -1,3 +1,9 @@
 {
   "build": { "dockerfile": "Dockerfile" },
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "ms-toolsai.jupyter"]
+    }
+  },
+  "postStartCommand": "/opt/conda/bin/tini -- /opt/docker/bin/workshop_entrypoint"
 }
