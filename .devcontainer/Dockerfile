@@ -1,4 +1,4 @@
-FROM ghcr.io/becksteinlab/streaming-md-docker:main
+FROM ghcr.io/becksteinlab/streaming-md-docker:main-common-cpu
 
 # Modify the entrypoint script so that it activates the workshop environment
 COPY entrypoint /opt/docker/bin/entrypoint
