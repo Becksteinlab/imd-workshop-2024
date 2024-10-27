@@ -28,5 +28,4 @@ cd $HOME
 
 # Activate the workshop environment
 source /opt/conda/etc/profile.d/conda.sh && conda activate workshop
-# Run whatever the user wants.
-exec /opt/conda/bin/$supkg conda "$@"
+
