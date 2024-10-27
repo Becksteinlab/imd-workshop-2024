@@ -21,11 +21,3 @@ cp -R /etc/skel $HOME && chown -R conda:conda $HOME/skel && (ls -A1 $HOME/skel |
 rm -f /opt/conda/.condarc
 
 cp /root/.condarc $HOME/.condarc && chown conda:conda $HOME/.condarc
-cd $HOME
-
-# Source everything that needs to be.
-. /opt/docker/bin/entrypoint_source
-
-# Activate the workshop environment
-source /opt/conda/etc/profile.d/conda.sh && conda activate workshop
-
