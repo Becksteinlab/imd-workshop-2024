@@ -16,17 +16,9 @@ export supkg="su-exec"
 chown conda:conda $HOME
 cp -R /etc/skel $HOME && chown -R conda:conda $HOME/skel && (ls -A1 $HOME/skel | xargs -I {} mv -n $HOME/skel/{} $HOME) && rm -Rf $HOME/skel
 
+chown -R conda:conda /opt/conda
 # This is needed to have a predictable channel specification used for builds
 # from non-conda-forge channels as conda-smithy does not remove it for us.
 rm -f /opt/conda/.condarc
 
 cp /root/.condarc $HOME/.condarc && chown conda:conda $HOME/.condarc
-cd $HOME
-
-# Source everything that needs to be.
-. /opt/docker/bin/entrypoint_source
-
-# Activate the workshop environment
-source /opt/conda/etc/profile.d/conda.sh && conda activate workshop
-# Run whatever the user wants.
-exec /opt/conda/bin/$supkg conda "$@"

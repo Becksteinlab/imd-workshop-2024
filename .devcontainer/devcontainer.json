@@ -1,3 +1,9 @@
 {
   "build": { "dockerfile": "Dockerfile" },
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "ms-toolsai.jupyter"]
+    }
+  },
+  "postStartCommand": ". /opt/conda/etc/profile.d/conda.sh && conda activate workshop"
 }

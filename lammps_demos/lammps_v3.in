@@ -57,7 +57,7 @@ fix 1 all nve
 
 ## IMD settings
 # https://docs.lammps.org/fix_imd.html
-fix 2 all imd 8888 version 3 unwrap off nowait off
+fix 2 all imd 8889 version 3 unwrap off nowait off
 
 ## Run MD sim
 run 100
