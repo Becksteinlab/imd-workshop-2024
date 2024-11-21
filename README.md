@@ -46,7 +46,7 @@ After installing, you'll see the "remote explorer" icon on the left. Click this 
 in the dropdown.
 
 ![alt text](.media/ide_1.png)
-![alt text](.media/ide_1.png)
+![alt text](.media/ide_2.png)
 
 ### Step 3.
 
@@ -83,10 +83,21 @@ in the workshop activity codespace.
 
 First, open the "activity/activity.ipynb" jupyter notebook from this repo in your codespace environment.
 
-Before running any code, select the "workshop" conda environment as your kernel
-in the upper right corner of the jupyter notebook. You may have to restart the kernel for this to take effect.
-
-After that, follow the instruction in the notebook to run the simulation engines and your analysis code!
+Before running any code, click the "Select kernel" button
+in the upper right corner of the jupyter notebook. 
 
 ![alt text](.media/codespace_1.png)
+
+Select "Python environments" and then the "workshop" environment.
+
+Next, restart the kernel.
+
 ![alt text](.media/codespace_2.png)
+
+You will see a popup like this:
+
+![alt text](.media/codespace_3.png)
+
+Just click "Change Interpreter" and select the "workshop" environment again and your notebook is ready to run!
+
+
