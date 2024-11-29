@@ -45,7 +45,7 @@ pbc                     = xyz       ; 3-D PBC
 ; Velocity generation
 gen_vel                 = no
 ; IMD group
-IMD-group               = Protein
+IMD-group               = System
 IMD-version             = 3
 IMD-nst                 = 10
 IMD-time                = yes
