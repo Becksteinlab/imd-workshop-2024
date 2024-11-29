@@ -1,7 +1,7 @@
 FROM ghcr.io/becksteinlab/streaming-md-docker:main-common-cpu
 
 COPY env.yaml env.yaml
-RUN source /opt/conda/etc/profile.d/conda.sh && \
+RUN . /opt/conda/etc/profile.d/conda.sh && \
         conda env create -n workshop --file=env.yaml
 
 COPY create_conda_user /opt/docker/bin/create_conda_user
