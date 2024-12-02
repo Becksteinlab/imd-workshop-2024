@@ -2,7 +2,7 @@
   "build": { "dockerfile": "Dockerfile" },
   "customizations": {
     "vscode": {
-      "extensions": ["ms-python.python", "ms-toolsai.jupyter", "donjayamanne.vscode-default-python-kernel"],
+      "extensions": ["ms-python.python", "ms-toolsai.jupyter"],
       "settings": {
         "python.defaultInterpreterPath": "/opt/conda/envs/workshop/bin/python"
       }
