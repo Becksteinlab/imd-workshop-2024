@@ -10,5 +10,5 @@ fi
 echo "Starting mdrun"
 
 ## START MDRUN
-gmx mdrun -v -nt 1 -imdwait -imdport 8889
+gmx mdrun -v -nt 1 -imdwait -imdport 9999
 cd ..
