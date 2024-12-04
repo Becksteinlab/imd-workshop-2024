@@ -12,7 +12,7 @@ class LiveTimeseriesGraph:
         self.vals = np.zeros(self.n_times, dtype=np.float32)
         self.dt = dt
 
-        self.fig, self.ax = plt.subplots(figsize=(10, 6))
+        self.fig, self.ax = plt.subplots(figsize=(8, 6))
         (self.p1,) = self.ax.plot([], [], label=legend_label)
         self.ax.set_xlabel("Time (ps)")
         self.ax.set_ylabel(y_label)
