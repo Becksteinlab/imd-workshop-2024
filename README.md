@@ -195,7 +195,7 @@ New MDP file options (subject to change as we work with GROMACS developers):
 ```
 IMD-group               = <group> ; Use 'System' to send the entire system via IMD (inherited from IMDv2)
 IMD-version             = <2 | 3> ; Defaults to 2 for backwards compatibility
-IMD-nst                 = <nst>   ; Number of integration steps between simulation frames communicated via IMD, defaults to 
+IMD-nst                 = <nst>   ; Number of integration steps between simulation frames communicated via IMD, defaults to 100
 IMD-time                = <yes | no> ; Whether to send time and step information via IMD, defaults to 'no'
 IMD-box                 = <yes | no> ; Whether to send box dimension information via IMD, defaults to 'no'
 IMD-coords              = <yes | no> ; Whether to send atomic coordinate information via IMD, defaults to 'no'
