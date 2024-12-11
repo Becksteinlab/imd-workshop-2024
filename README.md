@@ -30,10 +30,10 @@ If you're interested in using our tools after the workshop, see [post workshop](
 
 If you'd like to follow along with the speakers or use the demo codes after the workshop, all workshop demo code is available in this repo. 
 
-| Topic | Duration | Code |
-| --- | --- | --- |
+| Topic | Duration | Code | Presentation
+| --- | --- | --- | --- |
 | 👋 Welcome  | 5 min |
-| 📦 MDAnalysis mission & ecosystem | 15 min |
+| 📦 MDAnalysis mission & ecosystem | 15 min | | [presentations/00-MDAnalysis_mission_and_ecosystem-MacDermottOpeskin.pdf](presentations/00-MDAnalysis_mission_and_ecosystem-MacDermottOpeskin.pdf)
 | 🖼️ Streaming: big picture  | 15 min |
 | 👀 Streaming: first look | 10 min | [streaming-101/LAMMPS/MDAnalysis/demo.ipynb](streaming-101/LAMMPS/MDAnalysis/demo.ipynb)
 | ❓ Q&A: Streaming overview  | 5 min |
@@ -41,7 +41,7 @@ If you'd like to follow along with the speakers or use the demo codes after the 
 | 👀 Demo: Multiple analyses on NAMD simulation stream | 10 min | [namd-demos/rmsd-rdf/rmsd-rdf.ipynb](namd-demos/rmsd-rdf/rmsd-rdf.ipynb)
 | 💤 Break | 10 min |
 | 🎯Activity: Write your own stream analysis  | 40 min | See [Interactive activity](#interactive-activity)
-| 📦 Streaming: MDAnalysis functionality | 10 min | [streaming-101/imd-mda/imd-mda.ipynb](streaming-101/imd-mda/imd-mda.ipynb)
+| 📦 Streaming: MDAnalysis functionality | 10 min | | [presentations/03-Streaming_MDAnalysis_Functionality-Woods.ipynb](presentations/03-Streaming_MDAnalysis_Functionality-Woods.ipynb)
 | ❓Q&A: Streaming with MDAnalysis | 5 min |
 | 👀 Application: Velocity correlation functions and 2PT | 10 min | [gromacs-demos/vdos/demo.ipynb](gromacs-demos/vdos/demo.ipynb)
 | 👀 Application: Ion channel permeation | 10 min | [namd-demos/ion-flux/ion-flux.ipynb](namd-demos/ion-flux/ion-flux.ipynb)
