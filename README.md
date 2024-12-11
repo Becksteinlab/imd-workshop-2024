@@ -1,6 +1,6 @@
 Welcome to the MDAnalysis 2024 trajectory streaming workshop! 
 For the interactive activity, see [interactive activity](#interactive-activity).
-If you're interested in using our tools after the workshop, see [post workshop](#post-workshop)
+If you're interested in using our tools after the workshop and watching a recording, see [post workshop](#post-workshop)
 
 ##### Table of Contents  
 
@@ -14,6 +14,7 @@ If you're interested in using our tools after the workshop, see [post workshop](
     - [iii. Local codespace in IDE (VSCode only) (slow, not recommend)](#iii-local-codespace-in-ide-vscode-only-slow-not-recommend)
   - [2. Getting started with the activity](#2-getting-started-with-the-activity)
 - [Post-workshop](#post-workshop)
+  - [Workshop recording and materials](#workshop-recording-and-materials)
   - [Using IMDv3-compatible simulation engines](#using-imdv3-compatible-simulation-engines)
     - [GROMACS](#gromacs)
       - [With docker](#with-docker)
@@ -138,13 +139,15 @@ Now you're ready to start the activity! Follow the instructions in the notebook 
 
 # Post-workshop
 
-If you are interested in using our tools,
-please feel free to reach out for support, bug reports, or for sharing your ideas!
+If you are interested in using our tools, please feel free to reach out for support, bug reports, or for sharing your ideas!
 
 The best way to reach us is on the [MDAnalysis Discord](https://discord.gg/fXTSfDJyxE) in the '#streaming' channel. You can also reach out via email (workshops@mdanalysis.org)
 
-Below, we provide instructions for using the 
-simulation engines integrated with IMDv3 capability.
+## Workshop recording and materials
+
+* You can watch the [MDAnalysis Streaming Online Workshop Recording](https://www.youtube.com/watch?v=fjBTvnEADGs) from the MDAnalysis channel on YouTube.
+* All workshop materials are available in _this_ repository and are linked from the [Workshop Agenda](#workshop-agenda), including presentations and code.
+* Below, we provide instructions for using the simulation engines integrated with IMDv3 capability. You can either use *docker images* (for GROMACS and LAMMPS) or *build your own version* (GROMACS, LAMMPS, NAMD).
 
 ## Using IMDv3-compatible simulation engines
 
