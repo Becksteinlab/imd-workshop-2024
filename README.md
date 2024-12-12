@@ -35,8 +35,8 @@ If you'd like to follow along with the speakers or use the demo codes after the 
 | --- | --- | --- | --- |
 | 👋 Welcome  | 5 min |
 | 📦 MDAnalysis mission & ecosystem | 15 min | | [presentations/00-MDAnalysis_mission_and_ecosystem-MacDermottOpeskin.pdf](presentations/00-MDAnalysis_mission_and_ecosystem-MacDermottOpeskin.pdf)
-| 🖼️ Streaming: big picture  | 15 min |
-| 👀 Streaming: first look | 10 min | [streaming-101/LAMMPS/MDAnalysis/demo.ipynb](streaming-101/LAMMPS/MDAnalysis/demo.ipynb)
+| 🖼️ Streaming: big picture  | 15 min | | [presentations/01-Streaming_Big_Picture-Heyden.pdf](presentations/01-Streaming_Big_Picture-Heyden.pdf)
+| 👀 Streaming: first look | 10 min | [streaming-101/LAMMPS/MDAnalysis/demo.ipynb](streaming-101/LAMMPS/MDAnalysis/demo.ipynb) | [presentations/01-Streaming_First_Look-Heyden.pdf](presentations/01-Streaming_First_Look-Heyden.pdf)
 | ❓ Q&A: Streaming overview  | 5 min |
 | 📦 Streaming: MD packages, IMDClient | 15 min | | [presentations/02-Streaming_MD_Packages_and_IMDClient-Thirumalaiswamy.pdf](presentations/02-Streaming_MD_Packages_and_IMDClient-Thirumalaiswamy.pdf)
 | 👀 Demo: Multiple analyses on NAMD simulation stream | 10 min | [namd-demos/rmsd-rdf/rmsd-rdf.ipynb](namd-demos/rmsd-rdf/rmsd-rdf.ipynb)
@@ -47,7 +47,7 @@ If you'd like to follow along with the speakers or use the demo codes after the 
 | 👀 Application: Velocity correlation functions and 2PT | 10 min | [gromacs-demos/vdos/demo.ipynb](gromacs-demos/vdos/demo.ipynb)
 | 👀 Application: Ion channel permeation | 10 min | [namd-demos/ion-flux/ion-flux.ipynb](namd-demos/ion-flux/ion-flux.ipynb)
 | ❓ Q&A: Applications | 5 min |
-| 🔮 Future direction | 5 min |
+| 🔮 Future direction | 5 min | | [presentations/05-Future_Directions-Heyden.pdf](presentations/05-Future_Directions-Heyden.pdf)
 | 📖 Open Forum | 20 min |
 | 🚪 Closing | 5 min |
 
