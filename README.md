@@ -44,8 +44,8 @@ If you'd like to follow along with the speakers or use the demo codes after the 
 | 🎯 Activity: Write your own stream analysis  | 40 min | See [Interactive activity](#interactive-activity)
 | 📦 Streaming: MDAnalysis functionality | 10 min | | [presentations/03-Streaming_MDAnalysis_Functionality-Woods.ipynb](presentations/03-Streaming_MDAnalysis_Functionality-Woods.ipynb)
 | ❓Q&A: Streaming with MDAnalysis | 5 min |
-| 👀 Application: Velocity correlation functions and 2PT | 10 min | [gromacs-demos/vdos/demo.ipynb](gromacs-demos/vdos/demo.ipynb)
-| 👀 Application: Ion channel permeation | 10 min | [namd-demos/ion-flux/ion-flux.ipynb](namd-demos/ion-flux/ion-flux.ipynb)
+| 👀 Application: Velocity correlation functions and 2PT | 10 min | [gromacs-demos/vdos/demo.ipynb](gromacs-demos/vdos/demo.ipynb) | [presentations/04-Application_Velocity_correlation_functions_and_2PT-Cho.pdf](presentations/04-Application_Velocity_correlation_functions_and_2PT-Cho.pdf)
+| 👀 Application: Ion channel permeation | 10 min | [namd-demos/ion-flux/ion-flux.ipynb](namd-demos/ion-flux/ion-flux.ipynb) | [presentations/04-Application_Ion_channel_permeation-Cho.pdf](presentations/04-Application_Ion_channel_permeation-Cho.pdf)
 | ❓ Q&A: Applications | 5 min |
 | 🔮 Future direction | 5 min | | [presentations/05-Future_Directions-Heyden.pdf](presentations/05-Future_Directions-Heyden.pdf)
 | 📖 Open Forum | 20 min |
