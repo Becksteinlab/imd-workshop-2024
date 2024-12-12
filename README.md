@@ -38,10 +38,10 @@ If you'd like to follow along with the speakers or use the demo codes after the 
 | 🖼️ Streaming: big picture  | 15 min |
 | 👀 Streaming: first look | 10 min | [streaming-101/LAMMPS/MDAnalysis/demo.ipynb](streaming-101/LAMMPS/MDAnalysis/demo.ipynb)
 | ❓ Q&A: Streaming overview  | 5 min |
-| 📦Streaming: MD packages, IMDClient | 15 min |
+| 📦 Streaming: MD packages, IMDClient | 15 min | | [presentations/02-Streaming_MD_Packages_and_IMDClient-Thirumalaiswamy.pdf](presentations/02-Streaming_MD_Packages_and_IMDClient-Thirumalaiswamy.pdf)
 | 👀 Demo: Multiple analyses on NAMD simulation stream | 10 min | [namd-demos/rmsd-rdf/rmsd-rdf.ipynb](namd-demos/rmsd-rdf/rmsd-rdf.ipynb)
 | 💤 Break | 10 min |
-| 🎯Activity: Write your own stream analysis  | 40 min | See [Interactive activity](#interactive-activity)
+| 🎯 Activity: Write your own stream analysis  | 40 min | See [Interactive activity](#interactive-activity)
 | 📦 Streaming: MDAnalysis functionality | 10 min | | [presentations/03-Streaming_MDAnalysis_Functionality-Woods.ipynb](presentations/03-Streaming_MDAnalysis_Functionality-Woods.ipynb)
 | ❓Q&A: Streaming with MDAnalysis | 5 min |
 | 👀 Application: Velocity correlation functions and 2PT | 10 min | [gromacs-demos/vdos/demo.ipynb](gromacs-demos/vdos/demo.ipynb)
