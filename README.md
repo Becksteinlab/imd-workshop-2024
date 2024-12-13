@@ -43,7 +43,7 @@ If you'd like to follow along with the speakers or use the demo codes after the 
 | 💤 Break | 10 min |
 | 🎯 Activity: Write your own stream analysis  | 40 min | See [Interactive activity](#interactive-activity)
 | 📦 Streaming: MDAnalysis functionality | 10 min | | [presentations/03-Streaming_MDAnalysis_Functionality-Woods.ipynb](presentations/03-Streaming_MDAnalysis_Functionality-Woods.ipynb)
-| ❓Q&A: Streaming with MDAnalysis | 5 min |
+| ❓ Q&A: Streaming with MDAnalysis | 5 min |
 | 👀 Application: Velocity correlation functions and 2PT | 10 min | [gromacs-demos/vdos/demo.ipynb](gromacs-demos/vdos/demo.ipynb) | [presentations/04-Application_Velocity_correlation_functions_and_2PT-Cho.pdf](presentations/04-Application_Velocity_correlation_functions_and_2PT-Cho.pdf)
 | 👀 Application: Ion channel permeation | 10 min | [namd-demos/ion-flux/ion-flux.ipynb](namd-demos/ion-flux/ion-flux.ipynb) | [presentations/04-Application_Ion_channel_permeation-Cho.pdf](presentations/04-Application_Ion_channel_permeation-Cho.pdf)
 | ❓ Q&A: Applications | 5 min |
@@ -263,4 +263,48 @@ fix ID group-ID imd <imd_port> [trate <imd_trate>] [version (2|3)] [unwrap (on|o
 
 ### NAMD
 
-Please reach out to us directly for instructions on using the modified NAMD codes.
+Due to restrictions on distributing NAMD, we are unable to provide a pre-built docker image. However, we provide a patch for NAMD 3.0 to enable IMDv3 compatibility.
+
+#### IMDv3 patch
+
+One can register for and download the NAMD 3.0 source code from the [NAMD website](https://www.ks.uiuc.edu/Development/Download/download.cgi?UserID=&AccessCode=&ArchiveID=1712).
+
+The IMDv3 patch is available as a `*.diff` file in this [repository](https://github.com/amruthesht/namd-3.0-IMDv3-patch). To apply the patch, navigate to the root directory of the NAMD source code and run:
+
+```
+  cd /path/to/namd-3.0-source-repo
+  patch -p1 < /path/to/namd-3_0-IMDv3.diff
+```
+
+Once this is done, the source code will be patched with the new IMDv3 protocol. Detailed compile and build instructions can be found in the `IMDv3-dev.md` file in the patched repository.
+
+#### New options
+
+IMD based options/settings can be set in the NAMD input configuration file.
+
+Previously available options for IMD version 2 in NAMD are available [here](https://www.ks.uiuc.edu/Research/namd/3.0/ug/node49.html).
+
+The following new options are available as a part of the IMDv3 protocol:
+
+```bash
+# IMD version -- 2 for VMD and 3 for latest protocol, defaults to 2
+IMDversion     3
+# IMD session info settings
+# IMDsendPositions -- sending positions of entire system
+IMDsendPositions        yes
+# IMDsendEnergies -- sending energies and bonded, non-bonded and other contributions
+IMDsendEnergies     yes
+# IMDsendTime -- sending time information (time, dt, step)
+IMDsendTime        yes
+# IMDsendBoxDimensions -- sending box dimensions (lattice vectors a, b, c)
+# If box dimensions are not defined, default unit box is sent
+IMDsendBoxDimensions       yes
+# IMDsendVelocities -- sending velocities of entire system
+IMDsendVelocities       yes
+# IMDsendForces -- sending forces on all atoms
+IMDsendForces      yes
+# IMDwrapPositions -- wrapping positions to box; applicable when IMDsendPositions is yes
+IMDwrapPositions       yes
+```
+
+When `IMDversion` is set to 2, the new options (`IMDsendTime`, `IMDsendBoxDimensions`, `IMDsendVelocities`, `IMDsendForces`, `IMDwrapPositions`) will have no effect.
