@@ -162,10 +162,10 @@ First, pull the container:
 
 ```bash
 # CPU-only build
-docker pull ghcr.io/becksteinlab/streaming-md-docker:main-Common-CPU
+docker pull ghcr.io/becksteinlab/streaming-md-docker:main-common-cpu
 
 # CUDA build
-docker pull ghcr.io/becksteinlab/streaming-md-docker:main-Common-GPU
+docker pull ghcr.io/becksteinlab/streaming-md-docker:main-common-gpu
 ```
 
 To run GROMACS, do:
@@ -173,11 +173,11 @@ To run GROMACS, do:
 ```bash
 # CPU
 docker run -v /path/to/input/files:/home/conda:rw -p 8889:8889 \
-    ghcr.io/becksteinlab/streaming-md-docker:main-Common-CPU bash -c 'gmx <cmd>'
+    ghcr.io/becksteinlab/streaming-md-docker:main-common-cpu bash -c 'gmx <cmd>'
 
 # GPU
 docker run -v /path/to/input/files:/home/conda:rw --runtime=nvidia --gpus=all -p 8889:8889 \
-    ghcr.io/becksteinlab/streaming-md-docker:main-Common-GPU bash -c 'gmx <cmd>'
+    ghcr.io/becksteinlab/streaming-md-docker:main-common-gpu bash -c 'gmx <cmd>'
 ```
 
 #### From source
@@ -219,10 +219,10 @@ First, pull the container:
 
 ```bash
 # CPU-only build
-docker pull ghcr.io/becksteinlab/streaming-md-docker:main-Common-CPU
+docker pull ghcr.io/becksteinlab/streaming-md-docker:main-common-cpu
 
 # CUDA build
-docker pull ghcr.io/becksteinlab/streaming-md-docker:main-Common-GPU
+docker pull ghcr.io/becksteinlab/streaming-md-docker:main-common-gpu
 ```
 
 To run LAMMPS, do:
@@ -230,11 +230,11 @@ To run LAMMPS, do:
 ```bash
 # CPU
 docker run -v /path/to/input/files:/home/conda:rw -p 8889:8889 \
-    ghcr.io/becksteinlab/streaming-md-docker:main-Common-CPU bash -c 'lmp < </path/to/infile>'
+    ghcr.io/becksteinlab/streaming-md-docker:main-common-cpu bash -c 'lmp < </path/to/infile>'
 
 # GPU
 docker run -v /path/to/input/files:/home/conda:rw --runtime=nvidia --gpus=all -p 8889:8889 \
-    ghcr.io/becksteinlab/streaming-md-docker:main-Common-GPU bash -c 'lmp < </path/to/infile>'
+    ghcr.io/becksteinlab/streaming-md-docker:main-common-gpu bash -c 'lmp < </path/to/infile>'
 ```
 
 #### From source
